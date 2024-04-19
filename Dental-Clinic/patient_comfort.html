@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/village.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <a style="font-weight: bold; font-size:30px;" href="Index.html">
+            Dr. Adli AlGazzawi Center
+        </a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">ABOUT <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="meet_the_doctor.html">MEET THE DOCTORS</a>
+                <a href="before_and_afters.html">BEFORE AND AFTERS</a>
+                <a href="careers.html">CAREERS</a>
+                <a href="faq.html">FAQ</a>
+                <a href="fee_for_service_dentist.html">FEE-FOR-SERVICE DENTIST</a>
+                <a href="dental_technology.html">DENTAL TECHNOLOGY</a>
+                <a href="blog.html">BLOG</a>
+                <a href="it_takes_a_village.html">IT TAKES A VILLAGE</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">SERVICES <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <div class="dropdown">
+
+                    <a href="#" onclick="toggleDropdown(event)"> GENERAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+
+                        <a href="general.html">GENERAL</a>
+                        <a href="botox.html">BOTOX</a>
+                        <a href="cleanings.html">CLEANINGS & EXAMS
+                        </a>
+                        <a href="emergency.html">EMERGENCY CARE
+                        </a>
+                        <a href="crowns.html">CROWNS</a>
+                        <a href="gum_therapy.html">GUM THERAPY
+                        </a>
+                        <a href="dentures.html">DENTURES
+                        </a>
+                        <a href="night_guards.html">NIGHT GUARDS
+                        </a>
+                        <a href="family_dentistry.html">FAMILY DENTISTRY
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> COSMETIC <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="cosmetic.html">COSMETIC</a>
+                        <a href="invisalign.html">INVISALIGN</a>
+                        <a href="botox_cosmetic.html">BOTOX</a>
+                        <a href="teeth_whitening.html">TEETH WHITENING</a>
+                        <a href="bonding.html">BONDING</a>
+                        <a href="veneers.html">VENEERS</a>
+                        <a href="smile_makeover.html">SMILE MAKEOVER</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> SURGICAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="surgical.html">SURGICAL</a>
+                        <a href="implants.html">IMPLANTS</a>
+                        <a href="extractions.html">EXTRACTIONS</a>
+                        <a href="root_canal.html">ROOT CANAL</a>
+                        <a href="bone_grafts.html">BONE GRAFTS</a>
+                        <a href="implant_support_dentures.html">IMPLANT-SUPPORTED DENTURES</a>
+                        <a href="bridges.html">BRIDGES</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> PROPLEMS WE TREAT <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="proplems_we_treat.html">PROPLEMS WE TREAT</a>
+                        <a href="chipped_or_cracked_teeth.html"> CHIPPED OR CRACKED TEETH</a>
+                        <a href="wisdom_tooth_pain.html">WISDOM TOOTH PAIN</a>
+                        <a href="missing_tooth.html">MISSING TOOTH</a>
+                        <a href="toothache.html">TOOTHACHE</a>
+                        <a href="teeth_grinding.html">TEETH GRINDING</a>
+                        <a href="stained_teeth.html">STAINED TEETH</a>
+                        <a href="crooked_teeth.html">CROOKED TEETH</a>
+                        <a href="bleeding_gums.html">BLEEDING GUMS</a>
+                        <a href="bad_breath.html">BAD BREATH</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a href="warranty.html">WARRANTY</a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)"> NEW PATIENTS<i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="new_patients.html">NEW PATIENTS</a>
+                <a href="payment_options.html">PAYMENT OPTIONS</a>
+                <a href="patient_comfort.html">PATIENT COMFORT</a>
+                <a href="free_whitening.html">FREE WHITENING</a>
+            </div>
+        </div>
+        <a href="tel.html">(720) 730-9140</a>
+        <button>BOOK ONLINE</button>
+    </div>
+
+    <div id="image-container">
+        <img id="image-background" src="assets/village.jpg" alt="">
+        <div id="text-overlay">
+            <h3>
+                GREENWOOD VILLAGE ANTI-ANXIETY DENTIST
+            </h3>
+            <h1>
+                Compassionate care when you need it most
+            </h1>
+            <button>
+                BOOK ONLINE
+            </button>
+            <h3>
+                OR CALL (720) 730-9140
+            </h3>
+        </div>
+    </div>
+    <div
+        style="background-color: rgb(250, 255, 239);padding: 25px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; height:auto">
+
+        <h1>
+            Why does going to the dentist give me anxiety?
+        </h1>
+        <p>
+            If you get nervous before or during a dentist appointment, you’re not alone. In fact, dental anxiety is a
+            problem for almost 40% of the country’s population.
+        </p>
+        <p>
+            The most common reason people have a fear of the dentist is that they don’t know exactly what to expect.
+            Will the treatment be uncomfortable? How long will it take? Will it cost more than I expected? Will it be
+            successful?
+        </p>
+        <p>
+            At Village Dental, we specialize in treating patients with dental anxiety. We believe that you have a right
+            to understand everything about your procedure and be an active participant in your care. We’ll answer all
+            your questions and pay special attention to your comfort from beginning to end.
+        </p>
+        <p>
+            Book online now or call us at (720) 730-9140.
+        </p>
+    </div>
+    <div
+        style="padding: 10px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; color: white;background-color: rgb(0, 77, 87);">
+        <h1 style="text-align: center;">
+            Why we’re committed to reducing your dental anxiety
+
+        </h1>
+        <div style="padding:5px; width:70%">
+
+            <p>
+                When dental anxiety is present, the most common response is to simply not go to the dentist. It’s a
+                natural reaction to want to avoid these unpleasant feelings completely. Unfortunately, this can lead to
+                poor oral care overall and even worse dental problems, including:
+
+            </p>
+            <p>
+                Plaque and tartar buildup
+
+            </p>
+            <p>
+                Cavities
+
+            </p>
+            <p>
+                Gum disease
+
+            </p>
+            <p>
+                Tooth loss
+
+            </p>
+            <p>
+                We want to help you be proactive in your care. When you keep your routine exams and cleanings and
+                address problems when they’re small, you’ll be faced with fewer procedures and fewer dental expenses
+                down the road.
+            </p>
+        </div>
+        <div style="padding:25px;">
+            <img style="padding: 15px; width:350px;" src="assets/village.jpg" alt="">
+
+        </div>
+    </div>
+    <div
+        style="background-color: aliceblue;padding: 25px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; height:auto">
+        <div style=" padding: 25px;width: 400px;">
+            <img style="width: 350px; height: 300px;" src="assets/village.jpg" alt="">
+            <p>
+                “Whether I’m visiting for something as simple as a cleaning, or as complex as an implant, I am always
+                treated with respect and kindness and the results are solid. If you have any fear of dental treatment,
+                your mind will be changed after visiting Village Dental.”
+            </p>
+            <p>
+                — Jennifer M
+            </p>
+        </div>
+        <div style=" padding: 25px;">
+            <h1>
+                What can I do on my own to lessen dental anxiety?
+            </h1>
+            <p>
+                Here are a few techniques many patients have used to cope with being afraid of dentists:
+            </p>
+            <p>
+                Talk to us openly about your dental anxiety.
+            </p>
+            <p>
+                Don’t be afraid to tell us when you need a break from the session.
+            </p>
+            <p>
+                Employ the use of mindful breathing exercises to help relax.
+            </p>
+            <p>
+                Bring a support person with you to your visit.
+            </p>
+        </div>
+
+    </div>
+    <div id="four">
+        <div>
+            <h1>
+                ’’
+            </h1>
+            <h2>
+                Kind words from our patients
+            </h2>
+            <h4 style="color: yellow;">
+                ☆☆☆☆☆
+            </h4>
+            <a href="">
+                1,000 + 5-star reviews!
+            </a>
+        </div>
+        <div>
+            <div
+                style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgb(210, 221, 231);">
+                <p>
+                    Very pleasant, knowledgeable staff and always available when needed! 
+
+                </p>
+                <p>
+                    _________________________
+                </p>
+                <p>
+                    — David S.
+
+                </p>
+            </div>
+            <div
+                style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgba(15, 168, 135, 0.541);">
+                <p>
+                    Best service ever! From the front desk staff to being in the chair with Dr. Zervas, the care & consideration is stellar! Thank you!
+
+                </p>
+                <p>
+                    _________________________
+                </p>
+                <p>
+                    — Blake H.
+
+
+                </p>
+            </div>
+        </div>
+        <div
+            style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgb(189, 150, 98);">
+            <p>
+                Dr. Zervas and his staff are amazing! The environment they’ve created is top notch! The nicest people on the planet! I highly recommend Village Dental.
+
+            </p>
+            <p>
+                _________________________
+            </p>
+            <p>
+                — Lisa E.
+
+
+            </p>
+        </div>
+    </div>
+   
+    <div
+        style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px;">
+        <div style="padding: 25px;">
+            <div style="justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; ">
+                <img src="assets/visit_us_1.jpg" alt="" style="width: 150px; padding:10px; height:225px;">
+                <img src="assets/visit_us_2.jpg" alt=""
+                    style="width: 150px; padding:10px; height: 225px; border-radius:0px 40px 0px  0px ">
+
+            </div>
+            <div style="justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto;">
+                <img src="assets/visit_us_3.jpg" alt="" style="width: 150px; padding:10px; height:175px;">
+                <img src="assets/visit_us_4.jpg" alt="" style="width: 150px; padding:10px; height:175px;">
+            </div>
+        </div>
+        <div style="width: 60%; padding: 25px;">
+            <h1>
+                Visit Us
+            </h1>
+            <h3>
+                We’re conveniently located in the Denver Tech Center area. Find us on the 4th floor of the Triad Office
+                Park
+                building. Plenty of free parking available.
+            </h3>
+            <h3>
+                5670 Greenwood Plaza Blvd., Suite 404
+            </h3>
+            <h3>
+                Greenwood Village, CO 80111
+            </h3>
+            <h3>
+                <a
+                    href="https://www.google.com/maps/place/Village+Dental/@39.6850823,-106.4375388,9z/data=!4m6!3m5!1s0x876c86f17920c29b:0xdf6173eeaec191f2!8m2!3d39.6124846!4d-104.9001091!16s%2Fg%2F1tf_nt05?entry=ttu">
+                    Get Directions
+                </a>
+            </h3>
+            <h3>
+                Monday–Thursday: 7AM–3PM
+            </h3>
+        </div>
+    </div>
+    <div
+        style="background-color: rgb(242, 213, 175); text-align:center; padding:75px;height:300px;justify-content: center; align-items: center;">
+        <h1>
+            Book your visit online
+        </h1>
+        <h3>
+            View available appointments and enjoy dentistry done right. +FREE teeth whitening for life.
+        </h3>
+        <button
+            style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+            BOOK ONLINE
+        </button>
+    </div>
+    <div
+    style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px;">
+    <div style="padding: 25px; width:500px">
+        <h1>
+            Frequently Asked Questions
+
+        </h1>
+<p>More questions? We’re ready to help. Give us a call at (720) 730-9140.
+</p>
+    </div>
+    <div style="padding: 25px; width:500px;">
+
+        <div style="    border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+            <h3>
+                What are some symptoms of dental anxiety?
+            </h3>
+            <p>
+                Dental anxiety presents in a few different ways. A patient suffering from anxiety at the dentist may:
+
+
+            </p>
+            <p>
+                Sweat excessively
+
+            </p>
+            <p>
+                Get dizzy or faint
+            </p>
+            <p>
+                Experience heart palpitations
+            </p>
+            <p>
+                Have visible signs of distress, like heavy breathing or crying
+            </p>
+            <p>
+                Present with low blood pressure
+            </p>
+        </div>
+        <button
+            style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+            BOOK ONLINE
+        </button>
+
+
+    </div>
+
+</div>
+
+    <div
+        style="display: flex; color:white; background: rgb(0, 77, 87);  justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <div
+            style="display: flex; color:white; background: rgb(0, 77, 87);  justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+
+            <div style="padding: 15px; width: 200px;">
+                <div>
+                    <h2>
+                        Social
+                    </h2>
+                </div>
+                <div style="display: flex; justify-content:left;">
+                    <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                        <i id="icon" class="bi bi-instagram"></i>
+                    </a>
+                    <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                        <i id="icon" class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="padding: 15px; width: 200px;">
+                <div>
+                    <h2> Services
+                    </h2>
+                    <h3>
+                        <a style="color: white;" href="">
+                            General
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            Cosmetic
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            Surgical
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div
+            style="display: flex; color:white; background: rgb(0, 77, 87);  justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+            <div style="padding: 15px; width: 200px;">
+                <div>
+                    <h2>
+                        Our Office
+                    </h2>
+                    <h3>
+                        <a style="color: white;" href="">
+                            Home
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            Warranty
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            About
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            New Patients
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            Contact
+                        </a>
+                    </h3>
+                    <button
+                        style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+                        PAY ONLINE
+                    </button>
+                </div>
+            </div>
+            <div style="padding: 15px;width: 200px;">
+                <div>
+                    <h2>
+                        Contact Us
+                    </h2>
+                    <h3>
+                        <a style="color: white;"
+                            href="https://www.google.com/maps/place/Village+Dental/@39.6850823,-106.4375388,
+                            9z/data=!4m6!3m5!1s0x876c86f17920c29b:0xdf6173eeaec191f2!8m2!3d39.6124846!4d-104.9001091!15sChd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb1oZIhd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb5IBB2RlbnRpc3SaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkxkbU5FYjJOQkVBRQ?shorturl=1">
+                            5670 Greenwood Plaza Blvd Suite 404, Greenwood Village, CO 80111
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            (720) 730-9140
+                        </a>
+                    </h3>
+                    <h3>
+                        <a style="color: white;" href="">
+                            info@villagedentaldtc.com
+                        </a>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div
+        style="color:white; background: rgb(0, 77, 87); text-align: center; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <p>
+            © Village Dental 2021 | <a style="color: white;" href="">Privacy Policy</a> | <a style="color: white;"
+                href="">Accessibility Statement</a>
+        </p>
+        <p>
+            Dental Website by :Delmain
+        </p>
+    </div>
+
+</body>
+
+</html>

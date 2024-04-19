@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/village.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <a style="font-weight: bold; font-size:30px;" href="Index.html">
+            Dr. Adli AlGazzawi Center
+        </a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">ABOUT <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="meet_the_doctor.html">MEET THE DOCTORS</a>
+                <a href="before_and_afters.html">BEFORE AND AFTERS</a>
+                <a href="careers.html">CAREERS</a>
+                <a href="faq.html">FAQ</a>
+                <a href="fee_for_service_dentist.html">FEE-FOR-SERVICE DENTIST</a>
+                <a href="dental_technology.html">DENTAL TECHNOLOGY</a>
+                <a href="blog.html">BLOG</a>
+                <a href="it_takes_a_village.html">IT TAKES A VILLAGE</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">SERVICES <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <div class="dropdown">
+
+                    <a href="#" onclick="toggleDropdown(event)"> GENERAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+
+                        <a href="general.html">GENERAL</a>
+                        <a href="botox.html">BOTOX</a>
+                        <a href="cleanings.html">CLEANINGS & EXAMS
+                        </a>
+                        <a href="emergency.html">EMERGENCY CARE
+                        </a>
+                        <a href="crowns.html">CROWNS</a>
+                        <a href="gum_therapy.html">GUM THERAPY
+                        </a>
+                        <a href="dentures.html">DENTURES
+                        </a>
+                        <a href="night_guards.html">NIGHT GUARDS
+                        </a>
+                        <a href="family_dentistry.html">FAMILY DENTISTRY
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> COSMETIC <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="cosmetic.html">COSMETIC</a>
+                        <a href="invisalign.html">INVISALIGN</a>
+                        <a href="botox_cosmetic.html">BOTOX</a>
+                        <a href="teeth_whitening.html">TEETH WHITENING</a>
+                        <a href="bonding.html">BONDING</a>
+                        <a href="veneers.html">VENEERS</a>
+                        <a href="smile_makeover.html">SMILE MAKEOVER</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> SURGICAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="surgical.html">SURGICAL</a>
+                        <a href="implants.html">IMPLANTS</a>
+                        <a href="extractions.html">EXTRACTIONS</a>
+                        <a href="root_canal.html">ROOT CANAL</a>
+                        <a href="bone_grafts.html">BONE GRAFTS</a>
+                        <a href="implant_support_dentures.html">IMPLANT-SUPPORTED DENTURES</a>
+                        <a href="bridges.html">BRIDGES</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> PROPLEMS WE TREAT <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="proplems_we_treat.html">PROPLEMS WE TREAT</a>
+                        <a href="chipped_or_cracked_teeth.html"> CHIPPED OR CRACKED TEETH</a>
+                        <a href="wisdom_tooth_pain.html">WISDOM TOOTH PAIN</a>
+                        <a href="missing_tooth.html">MISSING TOOTH</a>
+                        <a href="toothache.html">TOOTHACHE</a>
+                        <a href="teeth_grinding.html">TEETH GRINDING</a>
+                        <a href="stained_teeth.html">STAINED TEETH</a>
+                        <a href="crooked_teeth.html">CROOKED TEETH</a>
+                        <a href="bleeding_gums.html">BLEEDING GUMS</a>
+                        <a href="bad_breath.html">BAD BREATH</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a href="warranty.html">WARRANTY</a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)"> NEW PATIENTS<i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="new_patients.html">NEW PATIENTS</a>
+                <a href="payment_options.html">PAYMENT OPTIONS</a>
+                <a href="patient_comfort.html">PATIENT COMFORT</a>
+                <a href="free_whitening.html">FREE WHITENING</a>
+            </div>
+        </div>
+        <a href="tel.html">(720) 730-9140</a>
+        <button>BOOK ONLINE</button>
+    </div>
+
+    <div id="image-container">
+        <img id="image-background" src="assets/village.jpg" alt="">
+        <div id="text-overlay">
+            <h3>
+                GREENWOOD VILLAGE DENTAL TECHNOLOGY DENTIST
+            </h3>
+            <h1>
+                Experience the future of dentistry today
+            </h1>
+            <button>
+                BOOK ONLINE
+            </button>
+            <h3>
+                OR CALL (720) 730-9140
+            </h3>
+        </div>
+    </div>
+    
+
+    <div
+    style="background-color: aliceblue;padding: 25px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; height:auto">
+    <div style="width: 650px; padding: 25px;">
+        <h1>
+            We’ve reimagined every detail of your 60-min visit
+        </h1>
+        <img style="width: 400px; height: 300px;" src="assets/village.jpg" alt="">
+
+    </div>
+    <div style="width: 650px; padding: 25px;">
+        <div>
+            <h2>
+                Simple Scheduling
+
+            </h2>
+            <p>
+                Easily book online. We offer early morning and same-day appointments.
+
+
+            </p>
+        </div>
+        <div>
+            <h2>
+                Medical Sterilization
+
+            </h2>
+            <p>
+                Come on in! Our office exceeds CDC and OSHA sterilization requirements to keep you safe.
+
+
+            </p>
+        </div>
+        <div>
+            <h2>
+                Automated Check-in
+
+            </h2>
+            <p>
+                Complete your paperwork on an iPad. Our average wait time is 5 minutes — but our lobby is so relaxing, you may wish it was longer.
+
+
+            </p>
+        </div>
+        <div>
+            <h2>
+                Comfortable Care
+
+            </h2>
+            <p>
+                Your new patient visit includes a dental cleaning, exam, and 3D x-rays. We’ll recommend follow-up treatments as needed.
+
+
+            </p>
+        </div>
+       
+    </div>
+</div>
+
+
+    <div
+        style="background-color:beige; display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px; height:500px ">
+        <h1>
+            It’s all in the details
+
+        </h1>
+        <div style="padding:10px;width: 175px;height: 200px;">
+            <h3>
+                Transparent pricing
+
+            </h3>
+            <p>
+                At Village Dental, the cost of treatment is clear & affordable.
+
+
+            </p>
+        </div>
+        <div style="padding:10px;width: 175px;height: 200px;">
+            <h3>
+                Rejuvenating Amenities
+
+            </h3>
+            <p>
+                Essential oils, a warm compress, healthy snacks and beverages.
+
+            </p>
+        </div>
+
+        <div style="padding:10px;width: 175px;height: 200px;">
+            <h3>
+                State-of-the-art tech
+
+            </h3>
+            <p>
+                Comfortable 3D x-rays done in seconds with 80% less radiation.
+
+            </p>
+        </div>
+        <div style="padding:10px;width: 175px;height: 200px;">
+            <h3>
+                Kids Corner
+
+            </h3>
+            <p>
+                We love our tiny toothbrush warriors! They’ll love our kid-friendly amenities.
+
+
+            </p>
+        </div>
+    </div>
+    <div
+        style="background-color: rgb(242, 213, 175); text-align:center; padding:75px;height:300px;justify-content: center; align-items: center;">
+        <h1>
+            Lifetime Warranty
+        </h1>
+        <h3>
+            We provide an unprecedented warranty on our work — because it’s the right thing to do.
+
+        </h3>
+        <button
+            style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+            LEARN MORE
+        </button>
+    </div>
+    <div
+    style="background-color: rgba(247, 238, 196, 0.541);padding: 25px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; height:auto">
+    <div style=" border-radius: 0px 30px 0px 30px  ;padding:25px;height: 500px;justify-content: center;
+            align-items: center; width: 400px;margin:25px;
+            ">
+            <h3>
+                INSURANCE
+   
+            </h3>
+            <h1>
+                We’ve got you covered
+            </h1>
+            <p>
+                Our office is in-network with Delta Premier and bills all other providers. We’ll explain how your specific dental benefits apply to the cost of recommended treatments.
+    
+    
+    
+            </p>
+            <p>
+                No insurance? Cash, check, and credit card payments are always accepted.
+    
+    
+            </p>
+            <button
+            style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+            LEARN MORE
+        </button>
+
+    </div>
+
+    <div style="width: 60%; padding: 25px; height:500px ;text-align: center;">
+        
+            <iframe style="width: 100%; height: 300px;" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
+                allowfullscreen></iframe>
+                <h1>
+                    “Candy Teeth to Dandy Teeth”
+                </h1>
+        
+    </div>
+
+</div>
+    <div id="four">
+        <div>
+            <h1>
+                ’’
+            </h1>
+            <h2>
+                Kind words from our patients
+            </h2>
+            <h4 style="color: yellow;">
+                ☆☆☆☆☆
+            </h4>
+            <a href="">
+                1,000 + 5-star reviews!
+            </a>
+        </div>
+        <div>
+            <div
+                style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgb(210, 221, 231);">
+                <p>
+                    Hands down the best dentist around. If you are looking for a team who genuinely cares about you and your oral health, look no further than Village Dental.
+
+                </p>
+                <p>
+                    _________________________
+                </p>
+                <p>
+                    — Jason H.
+
+                </p>
+            </div>
+            <div
+                style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgba(15, 168, 135, 0.541);">
+                <p>
+                    I love this dentist. You get the feeling you’re at the spa, not the dentist. Everyone is so friendly. I always feel like my teeth are well cared for.
+
+                </p>
+                <p>
+                    _________________________
+                </p>
+                <p>
+                    — Jenny H.
+
+                </p>
+            </div>
+        </div>
+        <div
+            style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgb(189, 150, 98);">
+            <p>
+                Dr. Zervas and his staff are amazing! Super personable and caring, and ALWAYS on time! They do everything to make sure you are comfortable.
+
+            </p>
+            <p>
+                _________________________
+            </p>
+            <p>
+                — Amy L.
+
+            </p>
+        </div>
+    </div>
+    <div
+        style="padding: 25px;height: 750px; border: 5px solid white; border-radius: 0px 50px 0px 50px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0 auto; background-image:url('assets/village.jpg')">
+        <div
+            style="border-radius: 0px 30px 0px 30px  ;padding:25px;width: 500px;height: 300px; background-color: rgb(255, 255, 255);">
+            <h3>
+                FREE WHITENING
+            </h3>
+            <h1>
+                Whitening for life
+            </h1>
+            <p>
+                Book a dental cleaning & exam
+            </p>
+            <p>
+                Take home a complimentary custom whitening kit
+            </p>
+            <p>
+                Visit us every 6 months and we'll refill your whitening gel
+            </p>
+            <button
+                style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+                BOOK ONLINE
+            </button>
+        </div>
+    </div>
+
+
+    <div
+        style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px;">
+        <div style="padding: 25px;">
+            <div style="justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; ">
+                <img src="assets/visit_us_1.jpg" alt="" style="width: 150px; padding:10px; height:225px;">
+                <img src="assets/visit_us_2.jpg" alt=""
+                    style="width: 150px; padding:10px; height: 225px; border-radius:0px 40px 0px  0px ">
+
+            </div>
+            <div style="justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto;">
+                <img src="assets/visit_us_3.jpg" alt="" style="width: 150px; padding:10px; height:175px;">
+                <img src="assets/visit_us_4.jpg" alt="" style="width: 150px; padding:10px; height:175px;">
+            </div>
+        </div>
+        <div style="width: 60%; padding: 25px;">
+            <h1>
+                Visit Us
+            </h1>
+            <h3>
+                We’re conveniently located in the Denver Tech Center area. Find us on the 4th floor of the Triad Office
+                Park
+                building. Plenty of free parking available.
+            </h3>
+            <h3>
+                5670 Greenwood Plaza Blvd., Suite 404
+            </h3>
+            <h3>
+                Greenwood Village, CO 80111
+            </h3>
+            <h3>
+                <a
+                    href="https://www.google.com/maps/place/Village+Dental/@39.6850823,-106.4375388,9z/data=!4m6!3m5!1s0x876c86f17920c29b:0xdf6173eeaec191f2!8m2!3d39.6124846!4d-104.9001091!16s%2Fg%2F1tf_nt05?entry=ttu">
+                    Get Directions
+                </a>
+            </h3>
+            <h3>
+                Monday–Thursday: 7AM–3PM
+            </h3>
+        </div>
+    </div>
+    <div
+        style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px;">
+        <a href="">
+            <img src="assets/academy.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy2.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy3.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy4.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy5.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+    </div>
+    <div
+        style="background-color: rgb(242, 213, 175); text-align:center; padding:75px;height:300px;justify-content: center; align-items: center;">
+        <h1>
+            Book your visit online
+        </h1>
+        <h3>
+            View available appointments and enjoy dentistry done right. +FREE teeth whitening for life.
+        </h3>
+        <button
+            style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+            BOOK ONLINE
+        </button>
+    </div>
+
+
+    <div
+        style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px;">
+        <div style="padding: 25px; width:500px">
+            <h1>
+                Frequently Asked Questions
+
+            </h1>
+            <h3>
+                More questions? We’re ready to help. Give us a call at (720) 730-9140 or book your free consultation
+                now.
+
+
+            </h3>
+        </div>
+        <div style="padding: 25px; width:500px">
+            <div style="    border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    When do you start seeing kids?
+                </h3>
+                <p>
+                    We offer a “Happy Visit” for kids starting at age 3. This is a 30-minute visit where we’ll help your
+                    child feel comfortable at the dentist and take a look at their teeth.
+
+
+                </p>
+            </div>
+            <div style="    border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    Is a cleaning included in my first visit?
+                </h3>
+                <p>
+                    Yes! Your first visit to our office will include a dental cleaning, exam, and 3D x-rays. We’ll
+                    recommend follow-up treatments as needed.
+
+                </p>
+
+            </div>
+            <div style="border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    How much will treatment cost?
+                </h3>
+                <p>
+                    We always recommend meeting with the doctors to discuss your dental concerns and any costs that may
+                    be associated with necessary treatment. Your dentists will give you a complete treatment plan with
+                    options for you to consider. Then you can make a choice of what option best fits your budget and how
+                    you want to proceed. We offer numerous financing options to help make your decision easy.
+                </p>
+            </div>
+            <div style="border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    Do you do cosmetic dentistry?
+                </h3>
+                <p>
+                    Yes! Virtually any cosmetic concern can be treated here in our office.
+                </p>
+            </div>
+            <div style="border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    Do you do tooth-colored fillings?
+                </h3>
+                <p>
+                    Yes. We offer white cavity fillings to restore your smile in a way that seamlessly matches the rest
+                    of your teeth.
+                </p>
+            </div>
+            <div style="border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    Do you do implants?
+                </h3>
+                <p>
+                    We do. Our dentists have placed thousands of long-lasting dental implants with great results.
+                </p>
+
+            </div>
+            <div style="border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    Do you offer In-office whitening?
+                </h3>
+                <p>
+                    Yes! We offer professional teeth whitening here in our dental spa. Sit back, relax, and catch up on
+                    your favorite show while we brighten your smile a shade or two.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div
+        style="display: flex; color:white; background: rgb(0, 77, 87); text-align: center; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2>
+                    Social
+                </h2>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                    <i id="icon" class="bi bi-instagram"></i>
+                </a>
+                <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                    <i id="icon" class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2> Services
+                </h2>
+                <h3>
+                    <a style="color: white;" href="">
+                        General
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Cosmetic
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Surgical
+                    </a>
+                </h3>
+            </div>
+        </div>
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2>
+                    Our Office
+                </h2>
+                <h3>
+                    <a style="color: white;" href="">
+                        Home
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Warranty
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        About
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        New Patients
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Contact
+                    </a>
+                </h3>
+                <button
+                    style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+                    BOOK ONLINE
+                </button>
+            </div>
+        </div>
+        <div style="padding: 15px; text-align: center; width: 200px;">
+            <div>
+                <h2>
+                    Contact Us
+                </h2>
+                <h3>
+                    <a style="color: white;"
+                        href="https://www.google.com/maps/place/Village+Dental/@39.6850823,-106.4375388,
+                        9z/data=!4m6!3m5!1s0x876c86f17920c29b:0xdf6173eeaec191f2!8m2!3d39.6124846!4d-104.9001091!15sChd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb1oZIhd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb5IBB2RlbnRpc3SaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkxkbU5FYjJOQkVBRQ?shorturl=1">
+                        5670 Greenwood Plaza Blvd Suite 404, Greenwood Village, CO 80111
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        (720) 730-9140
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        info@villagedentaldtc.com
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+    <div
+        style="color:white; background: rgb(0, 77, 87); text-align: center; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <p>
+            © Village Dental 2021 | Privacy Policy | Accessibility Statement
+        </p>
+        <p>
+            Dental Website by :Delmain
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/village.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <a style="font-weight: bold; font-size:30px;" href="Index.html">
+            Dr. Adli AlGazzawi Center
+        </a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">ABOUT <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="meet_the_doctor.html">MEET THE DOCTORS</a>
+                <a href="before_and_afters.html">BEFORE AND AFTERS</a>
+                <a href="careers.html">CAREERS</a>
+                <a href="faq.html">FAQ</a>
+                <a href="fee_for_service_dentist.html">FEE-FOR-SERVICE DENTIST</a>
+                <a href="dental_technology.html">DENTAL TECHNOLOGY</a>
+                <a href="blog.html">BLOG</a>
+                <a href="it_takes_a_village.html">IT TAKES A VILLAGE</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">SERVICES <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <div class="dropdown">
+
+                    <a href="#" onclick="toggleDropdown(event)"> GENERAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+
+                        <a href="general.html">GENERAL</a>
+                        <a href="botox.html">BOTOX</a>
+                        <a href="cleanings.html">CLEANINGS & EXAMS
+                        </a>
+                        <a href="emergency.html">EMERGENCY CARE
+                        </a>
+                        <a href="crowns.html">CROWNS</a>
+                        <a href="gum_therapy.html">GUM THERAPY
+                        </a>
+                        <a href="dentures.html">DENTURES
+                        </a>
+                        <a href="night_guards.html">NIGHT GUARDS
+                        </a>
+                        <a href="family_dentistry.html">FAMILY DENTISTRY
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> COSMETIC <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="cosmetic.html">COSMETIC</a>
+                        <a href="invisalign.html">INVISALIGN</a>
+                        <a href="botox_cosmetic.html">BOTOX</a>
+                        <a href="teeth_whitening.html">TEETH WHITENING</a>
+                        <a href="bonding.html">BONDING</a>
+                        <a href="veneers.html">VENEERS</a>
+                        <a href="smile_makeover.html">SMILE MAKEOVER</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> SURGICAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="surgical.html">SURGICAL</a>
+                        <a href="implants.html">IMPLANTS</a>
+                        <a href="extractions.html">EXTRACTIONS</a>
+                        <a href="root_canal.html">ROOT CANAL</a>
+                        <a href="bone_grafts.html">BONE GRAFTS</a>
+                        <a href="implant_support_dentures.html">IMPLANT-SUPPORTED DENTURES</a>
+                        <a href="bridges.html">BRIDGES</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> PROPLEMS WE TREAT <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="proplems_we_treat.html">PROPLEMS WE TREAT</a>
+                        <a href="chipped_or_cracked_teeth.html"> CHIPPED OR CRACKED TEETH</a>
+                        <a href="wisdom_tooth_pain.html">WISDOM TOOTH PAIN</a>
+                        <a href="missing_tooth.html">MISSING TOOTH</a>
+                        <a href="toothache.html">TOOTHACHE</a>
+                        <a href="teeth_grinding.html">TEETH GRINDING</a>
+                        <a href="stained_teeth.html">STAINED TEETH</a>
+                        <a href="crooked_teeth.html">CROOKED TEETH</a>
+                        <a href="bleeding_gums.html">BLEEDING GUMS</a>
+                        <a href="bad_breath.html">BAD BREATH</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a href="warranty.html">WARRANTY</a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)"> NEW PATIENTS<i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="new_patients.html">NEW PATIENTS</a>
+                <a href="payment_options.html">PAYMENT OPTIONS</a>
+                <a href="patient_comfort.html">PATIENT COMFORT</a>
+                <a href="free_whitening.html">FREE WHITENING</a>
+            </div>
+        </div>
+        <a href="tel.html">(720) 730-9140</a>
+        <button>BOOK ONLINE</button>
+    </div>
+
+    <div id="image-container">
+        <img id="image-background" src="assets/village.jpg" alt="">
+        <div id="text-overlay">
+            <h3>
+                VILLAGE DENTAL FEE-FOR-SERVICE (FFS) DENTISTRY
+            </h3>
+            <h1>
+                Discover the benefits of choosing a non-contracted dentist
+            </h1>
+            <button>
+                BOOK ONLINE
+            </button>
+            <h3>
+                OR CALL (720) 730-9140
+            </h3>
+        </div>
+    </div>
+    <div
+        style="background-color: aliceblue;padding: 25px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; height:auto">
+        <div style=" padding: 25px;">
+            <img style="width: 350px; height: 300px;" src="assets/village.jpg" alt="">
+
+        </div>
+        <div style="width: 60%; padding: 25px;">
+            <h1>
+                A dental care experience that prioritizes you
+            </h1>
+            <p>
+                At Village Dentistry, we believe that dental care is about more than just healthy teeth and gums; it’s about a relationship built on trust, comfort, and understanding. Our practice uses a fee-for-service model — an approach that ensures your dental health, preferences, and satisfaction come first.
+
+
+            </p>
+            <p>
+                As a fee-for-service practice, we’re driven by the desire to provide personalized, high-quality dental care that meets your unique needs. We’re not bound by the restrictions of insurance-based practices, and this freedom allows us to focus on what truly matters — delivering the best possible dental care for you.
+
+
+            </p>
+        </div>
+        
+    </div>
+    <div
+        style="padding: 25px;height: 750px; border: 5px solid white; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0 auto; background-image:url('assets/village.jpg')">
+        <div
+            style="border-radius: 0px 30px 0px 30px  ;padding:25px;width: 500px;height: 400px; background-color: rgb(243, 255, 243);">
+            <h1>
+                What is fee-for-service dentistry?
+            </h1>
+            <p>
+                Fee-for-service dentistry is a payment model for dental care where the dental office bills insurance for the usual and customary fees of the treatment provided. This model contrasts with insurance-based practices, where the services covered and their costs are often predetermined by the patient’s dental insurance policy.
+
+
+            </p>
+            <p>
+                Under the fee-for-service model, you and our dentists have more autonomy over the treatment plan. Our dentists can propose a wide range of treatments without being limited by what an insurance policy will cover. You, in turn, are free to choose from these options based on your specific dental health needs and preferences.
+
+            </p>
+        </div>
+    </div>
+    <div
+        style="background-color: aliceblue;padding: 25px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; height:auto">
+        <div style="width: 650px; padding: 25px;">
+            <h1>
+                Why Choose Us?
+            </h1>
+            <p>
+                “I highly recommend Village Dental to anyone in need of dental care, but especially if you’re worried
+                about unnecessary dental procedures or outdated care. You’re safe here.” — Tesla Y.
+
+
+            </p>
+            <img style="width: 400px; height: 300px;" src="assets/village.jpg" alt="">
+
+        </div>
+        <div style="width: 650px; padding: 25px;">
+            <div>
+                <h2>
+                    The highest-quality dentistry
+
+                </h2>
+                <p>
+                    Our fee-for-service model motivates us to deliver the finest quality dental treatments. Moreover, we
+                    can offer a broader range of services, including cosmetic dentistry, unhindered by insurance
+                    regulations.
+
+
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Greater control over your care
+
+                </h2>
+                <p>
+                    With fee-for-service dentistry, you aren’t limited to only seeing a dentist in your network — you
+                    can choose the best dentist.
+
+
+
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Personalized just for you
+
+                </h2>
+                <p>
+                    Since we aren’t limited to what’s covered under your insurance plan, our dentists have the freedom
+                    to recommend procedures and methodologies catered to your specific needs.
+
+
+
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Affordable treatment options
+
+                </h2>
+                <p>
+                    Working outside the insurance network allows us to charge a fair and fixed rate for procedures
+                    rather than have fees dictated by a third-party insurance provider.
+
+
+
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Long-term savings
+
+                </h2>
+                <p>
+                    We emphasize preventive care and education, helping you avoid costly and invasive treatments in the
+                    future. The less dental treatment we can do to keep you healthy, the better off you are!
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div
+        style="background-color: aliceblue;padding: 25px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; height:auto">
+        <div style="width: 60%; padding: 25px;">
+            <h1>
+                Yes, insured patients are welcome!
+            </h1>
+            <p>
+                Though we’re primarily a fee-for-service provider, we are in-network with Delta Premier and can bill all
+                other insurance carriers.
+
+            </p>
+            <p>
+                For those with dental insurance, we’ll collect your estimated co-payment at the time of service, then
+                file a claim with your insurance company on your behalf. If there’s any balance remaining, we’ll contact
+                you for final payment.
+
+
+            </p>
+            <p>
+                Give us a call to learn more – (720) 730-9140
+
+
+
+            </p>
+        </div>
+        <div style=" padding: 25px;">
+            <img style="width: 350px; height: 300px;" src="assets/village.jpg" alt="">
+
+        </div>
+    </div>
+    <div id="four">
+        <div>
+            <h1>
+                ’’
+            </h1>
+            <h2>
+                Kind words from our patients
+            </h2>
+            <h4 style="color: yellow;">
+                ☆☆☆☆☆
+            </h4>
+            <a href="">
+                1,000 + 5-star reviews!
+            </a>
+        </div>
+        <div>
+            <div
+                style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgb(210, 221, 231);">
+                <p>
+                    By far, the best dentist I have been to. Would highly recommend.
+
+                </p>
+                <p>
+                    _________________________
+                </p>
+                <p>
+                    — Garrik G.
+
+                </p>
+            </div>
+            <div
+                style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgba(15, 168, 135, 0.541);">
+                <p>
+                    Dr. Z is fantastic — engaged, helpful, professional, and VERY fair. You know your health and
+                    well-being are at the forefront with this team.
+
+                </p>
+                <p>
+                    _________________________
+                </p>
+                <p>
+                    — Bryn F.
+
+                </p>
+            </div>
+        </div>
+        <div
+            style=" margin:25px; border-radius: 0px 30px 0px 30px  ;padding:25px;width: 300px;height: 200px; background-color: rgb(189, 150, 98);">
+            <p>
+                I had a wonderful experience. They were prompt and very professional. One thing I really liked is they
+                didn’t try to sell me something I did not come for.
+
+            </p>
+            <p>
+                _________________________
+            </p>
+            <p>
+                — Clyde C.
+
+            </p>
+        </div>
+    </div>
+    <div
+        style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px;">
+        <div style="padding: 25px;">
+            <div style="justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; ">
+                <img src="assets/visit_us_1.jpg" alt="" style="width: 150px; padding:10px; height:225px;">
+                <img src="assets/visit_us_2.jpg" alt=""
+                    style="width: 150px; padding:10px; height: 225px; border-radius:0px 40px 0px  0px ">
+
+            </div>
+            <div style="justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto;">
+                <img src="assets/visit_us_3.jpg" alt="" style="width: 150px; padding:10px; height:175px;">
+                <img src="assets/visit_us_4.jpg" alt="" style="width: 150px; padding:10px; height:175px;">
+            </div>
+        </div>
+        <div style="width: 60%; padding: 25px;">
+            <h1>
+                Visit Us
+            </h1>
+            <h3>
+                We’re conveniently located in the Denver Tech Center area. Find us on the 4th floor of the Triad Office
+                Park
+                building. Plenty of free parking available.
+            </h3>
+            <h3>
+                5670 Greenwood Plaza Blvd., Suite 404
+            </h3>
+            <h3>
+                Greenwood Village, CO 80111
+            </h3>
+            <h3>
+                <a
+                    href="https://www.google.com/maps/place/Village+Dental/@39.6850823,-106.4375388,9z/data=!4m6!3m5!1s0x876c86f17920c29b:0xdf6173eeaec191f2!8m2!3d39.6124846!4d-104.9001091!16s%2Fg%2F1tf_nt05?entry=ttu">
+                    Get Directions
+                </a>
+            </h3>
+            <h3>
+                Monday–Thursday: 7AM–3PM
+            </h3>
+        </div>
+    </div>
+    <div
+        style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 25px;">
+        <a href="">
+            <img src="assets/academy.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy2.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy3.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy4.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+        <a href="">
+            <img src="assets/academy5.png" alt="" style="width: 200px; padding: 10px; height: 175px;">
+        </a>
+    </div>
+    <div
+        style="background-color: rgb(242, 213, 175); text-align:center; padding:75px;height:300px;justify-content: center; align-items: center;">
+        <h1>
+            Book your visit online
+        </h1>
+        <h3>
+            View available appointments and enjoy dentistry done right. +FREE teeth whitening for life.
+        </h3>
+        <button
+            style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+            BOOK ONLINE
+        </button>
+    </div>
+
+    <div
+        style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <div style="padding: 20px; width:400px">
+            <h1>
+                Frequently Asked Questions
+
+            </h1>
+            <h3>
+                More questions? We’re ready to help. Give us a call at (720) 730-9140.
+            </h3>
+        </div>
+        <div style="padding: 20px; width:500px">
+            <div style="    border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    How is fee-for-service dentistry different from insurance-based practices?
+                </h3>
+                <p>
+                    With the fee-for-service model, you and your dentist have more autonomy in deciding the treatment
+                    plan. Our dentists can recommend a broader range of treatments without being limited by what an
+                    insurance policy will cover, and you can choose from these options based on your needs and
+                    preferences.
+
+
+                </p>
+            </div>
+            <div style="    border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    Can I still submit claims to my insurance provider for treatment?
+                </h3>
+                <p>
+                    Yes. As a courtesy to our patients, we’ll take your estimated co-payment and submit a claim to your
+                    insurance provider. We’ll contact you if there’s still a balance to be paid.
+                </p>
+
+            </div>
+            <div style="    border: 5px solid rgb(0, 0, 0); margin:8px; padding:10px">
+                <h3>
+                    How do I know if fee-for-service dentistry is right for me?
+                </h3>
+                <p>
+                    Choosing a dental care model is a personal decision that depends on your needs, preferences, and
+                    financial situation. Choosing a non-contracted provider like Village Dental is a good fit if you
+                    value personalized, high-quality care, more control over your treatment options, and a preventive
+                    approach to dental health. Give us a call today, we’re more than happy to discuss this with you
+                    further!
+
+
+                </p>
+            </div>
+        </div> 
+    </div>
+
+    <div
+        style="display: flex; color:white; background: rgb(0, 77, 87); text-align: center; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2>
+                    Social
+                </h2>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                    <i id="icon" class="bi bi-instagram"></i>
+                </a>
+                <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                    <i id="icon" class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2> Services
+                </h2>
+                <h3>
+                    <a style="color: white;" href="">
+                        General
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Cosmetic
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Surgical
+                    </a>
+                </h3>
+            </div>
+        </div>
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2>
+                    Our Office
+                </h2>
+                <h3>
+                    <a style="color: white;" href="">
+                        Home
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Warranty
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        About
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        New Patients
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Contact
+                    </a>
+                </h3>
+                <button
+                    style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+                    BOOK ONLINE
+                </button>
+            </div>
+        </div>
+        <div style="padding: 15px; text-align: center; width: 200px;">
+            <div>
+                <h2>
+                    Contact Us
+                </h2>
+                <h3>
+                    <a style="color: white;"
+                        href="https://www.google.com/maps/place/Village+Dental/@39.6850823,-106.4375388,
+                        9z/data=!4m6!3m5!1s0x876c86f17920c29b:0xdf6173eeaec191f2!8m2!3d39.6124846!4d-104.9001091!15sChd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb1oZIhd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb5IBB2RlbnRpc3SaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkxkbU5FYjJOQkVBRQ?shorturl=1">
+                        5670 Greenwood Plaza Blvd Suite 404, Greenwood Village, CO 80111
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        (720) 730-9140
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        info@villagedentaldtc.com
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+    <div
+        style="color:white; background: rgb(0, 77, 87); text-align: center; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <p>
+            © Village Dental 2021 | Privacy Policy | Accessibility Statement
+        </p>
+        <p>
+            Dental Website by :Delmain
+        </p>
+    </div>
+
+</body>
+
+</html>

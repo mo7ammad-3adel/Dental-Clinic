@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/village.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <a style="font-weight: bold; font-size:30px;" href="Index.html">
+            Dr. Adli AlGazzawi Center
+        </a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">ABOUT <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="meet_the_doctor.html">MEET THE DOCTORS</a>
+                <a href="before_and_afters.html">BEFORE AND AFTERS</a>
+                <a href="careers.html">CAREERS</a>
+                <a href="faq.html">FAQ</a>
+                <a href="fee_for_service_dentist.html">FEE-FOR-SERVICE DENTIST</a>
+                <a href="dental_technology.html">DENTAL TECHNOLOGY</a>
+                <a href="blog.html">BLOG</a>
+                <a href="it_takes_a_village.html">IT TAKES A VILLAGE</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">SERVICES <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <div class="dropdown">
+
+                    <a href="#" onclick="toggleDropdown(event)"> GENERAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+
+                        <a href="general.html">GENERAL</a>
+                        <a href="botox.html">BOTOX</a>
+                        <a href="cleanings.html">CLEANINGS & EXAMS
+                        </a>
+                        <a href="emergency.html">EMERGENCY CARE
+                        </a>
+                        <a href="crowns.html">CROWNS</a>
+                        <a href="gum_therapy.html">GUM THERAPY
+                        </a>
+                        <a href="dentures.html">DENTURES
+                        </a>
+                        <a href="night_guards.html">NIGHT GUARDS
+                        </a>
+                        <a href="family_dentistry.html">FAMILY DENTISTRY
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> COSMETIC <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="cosmetic.html">COSMETIC</a>
+                        <a href="invisalign.html">INVISALIGN</a>
+                        <a href="botox_cosmetic.html">BOTOX</a>
+                        <a href="teeth_whitening.html">TEETH WHITENING</a>
+                        <a href="bonding.html">BONDING</a>
+                        <a href="veneers.html">VENEERS</a>
+                        <a href="smile_makeover.html">SMILE MAKEOVER</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> SURGICAL <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="surgical.html">SURGICAL</a>
+                        <a href="implants.html">IMPLANTS</a>
+                        <a href="extractions.html">EXTRACTIONS</a>
+                        <a href="root_canal.html">ROOT CANAL</a>
+                        <a href="bone_grafts.html">BONE GRAFTS</a>
+                        <a href="implant_support_dentures.html">IMPLANT-SUPPORTED DENTURES</a>
+                        <a href="bridges.html">BRIDGES</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"> PROPLEMS WE TREAT <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="proplems_we_treat.html">PROPLEMS WE TREAT</a>
+                        <a href="chipped_or_cracked_teeth.html"> CHIPPED OR CRACKED TEETH</a>
+                        <a href="wisdom_tooth_pain.html">WISDOM TOOTH PAIN</a>
+                        <a href="missing_tooth.html">MISSING TOOTH</a>
+                        <a href="toothache.html">TOOTHACHE</a>
+                        <a href="teeth_grinding.html">TEETH GRINDING</a>
+                        <a href="stained_teeth.html">STAINED TEETH</a>
+                        <a href="crooked_teeth.html">CROOKED TEETH</a>
+                        <a href="bleeding_gums.html">BLEEDING GUMS</a>
+                        <a href="bad_breath.html">BAD BREATH</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a href="warranty.html">WARRANTY</a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)"> NEW PATIENTS<i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-menu">
+                <a href="new_patients.html">NEW PATIENTS</a>
+                <a href="payment_options.html">PAYMENT OPTIONS</a>
+                <a href="patient_comfort.html">PATIENT COMFORT</a>
+                <a href="free_whitening.html">FREE WHITENING</a>
+            </div>
+        </div>
+        <a href="tel.html">(720) 730-9140</a>
+        <button>BOOK ONLINE</button>
+    </div>
+
+    <div id="image-container">
+        <img id="image-background" src="assets/village.jpg" alt="">
+        <div id="text-overlay">
+            <h3>
+                VILLAGE DENTAL BLOG
+            </h3>
+            <h1>
+                Dental health tips and resources for our patients
+            </h1>
+        </div>
+    </div>
+    <div style="padding: 25px; justify-content: center; align-items: center; background: rgb(227, 227, 227);">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0 auto;">
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    Long-Term Care for Veneers: Tips and Best Practices
+                </h2>
+                <h6>
+                    Apr 15, 2024 | Dental Tips
+                </h6>
+                <p>
+                    Veneers offer a transformative solution for enhancing smiles, providing a durable and
+                    natural-looking option for those seeking to improve...
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    How Botox Can Help TMJ and Headaches: A Revolutionary Approach in Dental Care
+                </h2>
+                <h6>
+                    Mar 5, 2024 | Dental Tips
+
+                </h6>
+                <p>
+                    In recent years, the use of Botox in dentistry has gained significant attention, particularly in
+                    addressing temporomandibular joint (TMJ)...
+
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    Top Secrets to a Bright Smile All Year Long
+                </h2>
+                <h6>
+                    Feb 5, 2024 | Cosmetic Dentistry
+
+
+                </h6>
+                <p>
+                    Achieving a bright, confident smile is a goal for many. But what are the secrets to keeping your teeth shining throughout the year? From...
+
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    Why Do I Clench My Jaw and How Can I Stop?
+                </h2>
+                <h6>
+                    Jan 25, 2024 | Dental Tips
+
+
+
+                </h6>
+                <p>
+                    Have you ever woken up with a throbbing jaw, wondering why it hurts so much? If you've experienced this, you might have been clenching...
+
+
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    The Psychological Benefits of a Smile Makeover  
+                              </h2>
+                <h6>
+                    Jan 25, 2024 | Cosmetic Dentistry
+
+
+
+
+                </h6>
+                <p>
+                    They say that a smile is the best accessory you can wear — we agree! If insecurities about your smile are holding you back, Village Dental...
+
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    Invisalign vs. Mail-Order Aligners: What You Need to Know
+                </h2>
+                <h6>
+                    Jan 25, 2024 | Cosmetic Dentistry, Dental Tips
+
+
+
+
+
+                </h6>
+                <p>
+                    Are you considering orthodontic treatment to perfect your smile? In the pursuit of that dazzling smile, you'll be faced with a significant...
+
+
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    Botox in Dentistry: Everything You Need to Know
+                </h2>
+                <h6>
+                    Sep 28, 2023 | Cosmetic Dentistry, Dental Tips
+
+
+
+
+
+
+                </h6>
+                <p>
+                    If you think Botox is only for cosmetic purposes, chances are you’re missing out. More and more dental practices are offering Botox, as we...
+
+
+
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    Exploring Your Options for Smile Enhancement: From Whitening to Veneers
+                </h2>
+                <h6>
+                    Aug 3, 2023 | Cosmetic Dentistry
+
+
+
+
+
+
+
+                </h6>
+                <p>
+                    Are you longing for a radiant smile that exudes confidence? We can help! At Village Dental, we believe in empowering our patients to make...
+
+
+
+
+
+                </p>
+
+            </div>
+            <div style=" margin:25px;padding:25px;width: 350px;height: 500px; background-color: rgb(255, 255, 255);">
+                <img style="padding: 15px; width:300px;" src="assets/village.jpg" alt="">                <h2>
+                    How You Can Improve Your Dental Health This Year
+                </h2>
+                <h6>
+                    Jun 22, 2023 | Dental Tips
+
+
+
+
+
+
+
+
+                </h6>
+                <p>
+                    Your dental health plays a crucial role in your overall well-being. Neglecting dental care can lead to many dental problems, including...
+
+
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div
+        style="display: flex; color:white; background: rgb(0, 77, 87); text-align: center; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2>
+                    Social
+                </h2>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                    <i id="icon" class="bi bi-instagram"></i>
+                </a>
+                <a style="color: white; padding: 10px; font-size:25px" href="" class="icon">
+                    <i id="icon" class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2> Services
+                </h2>
+                <h3>
+                    <a style="color: white;" href="">
+                        General
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Cosmetic
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Surgical
+                    </a>
+                </h3>
+            </div>
+        </div>
+        <div style="padding: 15px; width: 200px;">
+            <div>
+                <h2>
+                    Our Office
+                </h2>
+                <h3>
+                    <a style="color: white;" href="">
+                        Home
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Warranty
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        About
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        New Patients
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        Contact
+                    </a>
+                </h3>
+                <button
+                    style="padding: 10px 20px; background-color: rgb(255, 170, 0); color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+                    BOOK ONLINE
+                </button>
+            </div>
+        </div>
+        <div style="padding: 15px; text-align: center; width: 200px;">
+            <div>
+                <h2>
+                    Contact Us
+                </h2>
+                <h3>
+                    <a style="color: white;"
+                        href="https://www.google.com/maps/place/Village+Dental/@39.6850823,-106.4375388,
+                        9z/data=!4m6!3m5!1s0x876c86f17920c29b:0xdf6173eeaec191f2!8m2!3d39.6124846!4d-104.9001091!15sChd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb1oZIhd2aWxsYWdlIGRlbnRhbCBjb2xvcmFkb5IBB2RlbnRpc3SaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkxkbU5FYjJOQkVBRQ?shorturl=1">
+                        5670 Greenwood Plaza Blvd Suite 404, Greenwood Village, CO 80111
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        (720) 730-9140
+                    </a>
+                </h3>
+                <h3>
+                    <a style="color: white;" href="">
+                        info@villagedentaldtc.com
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+    <div
+        style="color:white; background: rgb(0, 77, 87); text-align: center; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 auto; padding: 15px;">
+        <p>
+            © Village Dental 2021 | Privacy Policy | Accessibility Statement
+        </p>
+        <p>
+            Dental Website by :Delmain
+        </p>
+    </div>
+
+</body>
+
+</html>
